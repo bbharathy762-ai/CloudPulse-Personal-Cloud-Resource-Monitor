@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloudPulse | Cloud Resource Monitor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">CLOUD COMPUTING PROJECT</p>
+      <h1>CloudPulse</h1>
+      <p class="subtitle">A simple cloud resource monitoring dashboard</p>
+    </div>
+    <span class="status"><span></span> All Systems Normal</span>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">LIVE OVERVIEW</p>
+        <h2>Cloud Resource Monitor</h2>
+        <p>Track your cloud environment with a clean, lightweight dashboard.</p>
+      </div>
+      <div class="updated">Last updated: <strong id="lastUpdated">--</strong></div>
+    </section>
+
+    <section class="cards">
+      <article class="card">
+        <div class="card-head"><span>CPU Usage</span><span class="icon">CPU</span></div>
+        <div class="metric"><span id="cpu">--</span><small>%</small></div>
+        <div class="bar"><div id="cpuBar"></div></div>
+        <p class="muted">Average compute usage</p>
+      </article>
+
+      <article class="card">
+        <div class="card-head"><span>Memory</span><span class="icon">RAM</span></div>
+        <div class="metric"><span id="memory">--</span><small>%</small></div>
+        <div class="bar"><div id="memoryBar"></div></div>
+        <p class="muted">Allocated memory usage</p>
+      </article>
+
+      <article class="card">
+        <div class="card-head"><span>Storage</span><span class="icon">DISK</span></div>
+        <div class="metric"><span id="storage">--</span><small>%</small></div>
+        <div class="bar"><div id="storageBar"></div></div>
+        <p class="muted">Cloud storage consumed</p>
+      </article>
+
+      <article class="card">
+        <div class="card-head"><span>Active Instances</span><span class="icon">VM</span></div>
+        <div class="metric"><span id="instances">--</span><small> nodes</small></div>
+        <p class="muted">Currently running instances</p>
+      </article>
+    </section>
+
+    <section class="grid">
+      <article class="panel">
+        <div class="panel-title">
+          <div><h3>Resource Activity</h3><p>Recent simulated cloud metrics</p></div>
+          <button id="refreshBtn">Refresh Data</button>
+        </div>
+        <div class="chart">
+          <div class="y-labels"><span>100%</span><span>75%</span><span>50%</span><span>25%</span><span>0%</span></div>
+          <div class="bars" id="chartBars"></div>
+        </div>
+        <div class="days"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div>
+      </article>
+
+      <article class="panel">
+        <div class="panel-title">
+          <div><h3>Cloud Services</h3><p>Service health status</p></div>
+        </div>
+        <ul class="services">
+          <li><span><i class="dot green"></i>Compute Engine</span><b>Healthy</b></li>
+          <li><span><i class="dot green"></i>Object Storage</span><b>Healthy</b></li>
+          <li><span><i class="dot green"></i>Database</span><b>Healthy</b></li>
+          <li><span><i class="dot yellow"></i>Backup Service</span><b>Monitoring</b></li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="info">
+      <div><strong>Project Type</strong><span>Cloud Computing</span></div>
+      <div><strong>Architecture</strong><span>Client-side Dashboard</span></div>
+      <div><strong>Deployment</strong><span>Static Cloud Hosting</span></div>
+    </section>
+  </main>
+
+  <footer>CloudPulse • Sample Cloud Computing Project</footer>
+  <script src="script.js"></script>
+</body>
+</html>
