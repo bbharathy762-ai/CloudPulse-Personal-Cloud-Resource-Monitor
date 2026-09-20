@@ -2,7 +2,7 @@
 
 CloudPulse is a simple cloud computing sample project that displays a dashboard of simulated cloud resource metrics.
 
-live Website:
+live Website:https://bbharathy762-ai.github.io/CloudPulse-Personal-Cloud-Resource-Monitor/
 ## Features
 
 - CPU usage monitor
